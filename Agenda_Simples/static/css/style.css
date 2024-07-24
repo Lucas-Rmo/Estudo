@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Estilos dos cabeçalhos */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos das linhas */
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Estilo do hover */
+tr:hover {
+    background-color: #d6d3d3;
+    
+}
+
+/* Responsividade */
+@media (max-width: 1920px) {
+    table {
+        width: 100%;
+    }
+}
+
+/* Estilos da legenda da tabela */
+caption.Titulo {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    color: #009879;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #009879;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+.Novo_Contato{
+    caption-side: top;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    color: #009879;
+    background-color: #f8f9fa;
+    text-decoration: none;
+
+}
+
+a.Excluir:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color:#d14040;
+
+}
+
+a.Editar:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color:#40d189;
+}
+
+a.Editar,a.Excluir{
+    text-decoration: none;
+    color:black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #009879;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #d14040;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #058a6f;
+}
+
+.btn-secondary:hover {
+    background-color: #b83535;
+}
+
+.titulo {
+    font-weight: bold;
+    color: #009879;
+    font-size:25px;
+}
+
+p {
+    margin: 5px 0;
+    text-align: center;
+    font-size:20px;
+}
+
+.detalhes-contato {
+    margin-bottom: 20px;
+}

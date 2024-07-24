@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table>
+<caption class="Titulo">Contatos</caption>
+<caption class="Novo_Contato"><a class="Novo_Contato" href= {% url 'contato_create' %}>Adicionar novo contato</a></caption>
+<tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>E-mail</th>
+    <th></th>
+    <th></th>
+</tr>
+{% for contato in contatos  %}
+
+
+<tr>
+    <td><a class="Editar" href="{% url "detalhes_contato" contato.pk %}"> {{ contato.nome }} </a></td>
+    {% if contato.telefone == None %}
+    <td>Sem telefone</td>
+    {% else %}
+    <td>{{ contato.telefone}}</td>
+    {% endif %}
+
+    {% if contato.email == None %}
+    <td>Sem e-mail</td>
+    {% else %}
+    <td>{{ contato.email}}</td>
+    {% endif %}
+    <td><a class="Excluir" href="{% url 'contato_delete' contato.pk %}" >Excluir</a></td>
+    <td><a class="Editar" href="{% url 'contato_update' contato.pk %}">Editar</a></td>    
+</tr>
+
+
+{% endfor %}
+</table>
+{% endblock content %}

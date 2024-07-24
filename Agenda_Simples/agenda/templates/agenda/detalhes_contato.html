@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h2>Detalhes do contato</h2>
+
+    <p class="titulo"> Nome: </p>
+    <p> {{ contato.nome }} </p>
+
+    <p class="titulo"> Telefone: </p>
+    <p> {{ contato.telefone }} </p>
+
+    <p class="titulo"> E-mail: </p>
+    <p> {{ contato.email }} </p>
+
+    <p class="titulo"> Resumo: </p>
+    <p> {{ contato.resumo }} </p>
+
+    <a href="{% url "Listar_contatos" %}" class="btn btn-secondary">Voltar</a>
+
+</div>
+
+
+{% endblock content %}
+
+
+
