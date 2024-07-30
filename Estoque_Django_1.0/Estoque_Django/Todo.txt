@@ -1,0 +1,6 @@
+Forms
+O resto das templates
+Adicionar os clientes -> faltam só os clientes e a parte de login
+
+próximo projeto ->
+simulador de ações/port
